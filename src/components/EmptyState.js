@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export const EmptyState = ({ title, description, }) => {
+    return (_jsx("div", { className: "flex items-center justify-center py-12 px-4", children: _jsxs("div", { className: "text-center max-w-sm", children: [_jsx("div", { className: "mb-4 flex justify-center", children: _jsx("svg", { className: "w-16 h-16 text-gray-300", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: _jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 1.5, d: "M12 6.253v13m0-13C6.5 6.253 2 10.753 2 15s4.5 8.747 10 8.747c5.5 0 10-3.747 10-8.747 0-4.247-4.5-8.747-10-8.747z" }) }) }), _jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-1", children: title }), description && _jsx("p", { className: "text-gray-600 text-sm", children: description })] }) }));
+};

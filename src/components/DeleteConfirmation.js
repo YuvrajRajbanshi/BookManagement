@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Button } from "./Button";
+export const DeleteConfirmation = ({ bookTitle, onConfirm, onCancel, isLoading = false, }) => {
+    return (_jsx("div", { className: "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4", children: _jsxs("div", { className: "bg-white rounded-lg shadow-lg max-w-sm w-full p-6 space-y-6", children: [_jsxs("div", { children: [_jsx("h2", { className: "text-lg font-semibold text-gray-900", children: "Delete Book" }), _jsxs("p", { className: "text-gray-600 text-sm mt-2", children: ["Are you sure you want to delete", " ", _jsxs("span", { className: "font-medium", children: ["\"", bookTitle, "\""] }), "? This action cannot be undone."] })] }), _jsxs("div", { className: "flex gap-3", children: [_jsx(Button, { variant: "secondary", onClick: onCancel, disabled: isLoading, className: "flex-1", children: "Cancel" }), _jsx(Button, { variant: "danger", onClick: onConfirm, isLoading: isLoading, className: "flex-1", children: "Delete" })] })] }) }));
+};
