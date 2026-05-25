@@ -37,7 +37,7 @@ server/
 │   ├── models/
 │   │   └── Book.js               # Mongoose schema
 │   ├── routes/
-│   │   └── bookRoutes.js         # API routes
+│   │   └── book.js         # API routes
 │   ├── middleware/
 │   │   └── errorMiddleware.js    # Error handling
 │   ├── app.js                    # Express app setup

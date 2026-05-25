@@ -12,7 +12,7 @@ const connectDB = async () => {
     return connection;
   } catch (error) {
     console.error(
-      `Error connecting to MongoDB: ${error.message}. If this is MongoDB Atlas, make sure the Render server IP is allowed in Network Access or temporarily allow 0.0.0.0/0 for testing.`
+      `Error connecting to MongoDB: ${error.message}. If this is MongoDB Atlas, make sure the Render server IP is allowed in Network Access or temporarily allow 0.0.0.0/0 for testing.`,
     );
     process.exit(1);
   }

@@ -8,12 +8,13 @@ const app = express();
 // CORS configuration
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    credentials: true,
+    origin: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
-  })
+  }),
 );
+
+app.options("*", cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
