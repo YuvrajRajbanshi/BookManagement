@@ -1,4 +1,3 @@
-import React from "react";
 import { BooksPage } from "./pages/BooksPage";
 
 function App() {

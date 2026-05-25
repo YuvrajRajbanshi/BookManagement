@@ -8,7 +8,6 @@ import {
   EmptyState,
   ErrorAlert,
   GenreFilter,
-  LoadingSpinner,
   BookCardSkeleton,
   Modal,
   SearchBar,
@@ -151,7 +150,12 @@ export const BooksPage: React.FC = () => {
 
     try {
       const bookId = state.deleteConfirmation.book.id;
-      console.log("Confirming delete for book ID:", bookId, "Book:", state.deleteConfirmation.book);
+      console.log(
+        "Confirming delete for book ID:",
+        bookId,
+        "Book:",
+        state.deleteConfirmation.book,
+      );
       await deleteBook(bookId);
       await fetchBooks();
       setState((prev) => ({
